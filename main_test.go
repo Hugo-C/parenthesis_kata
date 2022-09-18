@@ -4,6 +4,13 @@ import (
 	"testing"
 )
 
+func TestNoParanthesis(t *testing.T) {
+	is_valid := IsParenthesisValid("wow")
+	if !is_valid {
+		t.Fail()
+	}
+}
+
 func TestSingleParanthesis(t *testing.T) {
 	is_valid := IsParenthesisValid("(wow)")
 	if !is_valid {
